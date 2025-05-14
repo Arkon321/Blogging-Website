@@ -1,0 +1,98 @@
+.main-header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .logout-btn, .dark-mode-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover, .dark-mode-toggle:hover {
+    text-decoration: underline;
+  }
+  
+  /* Default light theme */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.main-header {
+  background-color: #4a90e2;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header.dark-mode {
+  background-color: #333;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+/* Dark mode links */
+body.dark-mode nav a {
+  color: white;
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:focus {
+  outline: none;
+}
+
+.logout-btn {
+  border: none;
+  background-color: #f44336;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}

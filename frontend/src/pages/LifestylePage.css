@@ -1,0 +1,249 @@
+/* LifestylePage.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+section {
+  margin-top: 20px;
+}
+
+section div {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+p {
+  color: #666;
+}
+
+/* Popular Blogs Section */
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.person img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.personInfo h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.personInfo p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.blog .content {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Buttons for interactions */
+.interactions {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.interactions button {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+/* Like, Dislike, Report colors */
+button.like {
+  background-color: #28a745;
+}
+
+button.dislike {
+  background-color: #dc3545;
+}
+
+button.report {
+  background-color: #ff5722;
+}
+
+button.like:hover {
+  background-color: #218838;
+}
+
+button.dislike:hover {
+  background-color: #c82333;
+}
+
+button.report:hover {
+  background-color: #e64a19;
+}
+
+/* Rating */
+.rating-section {
+  margin-top: 10px;
+}
+
+.rating-section input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.rating-section p {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Comments */
+.comments {
+  margin-top: 12px;
+}
+
+.comments input {
+  width: 75%;
+  padding: 6px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comments button {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.comments p {
+  font-size: 13px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Image preview styling */
+img {
+  max-width: 300px;  /* Set the maximum width */
+  max-height: 200px; /* Set the maximum height */
+  width: auto;
+  height: auto;
+  object-fit: contain;  /* Ensures aspect ratio is maintained */
+  margin-top: 10px;
+}
+
+/* Modify the button-toolbar to align its contents */
+.button-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* For absolute positioning of the 'Add Blog' button */
+}
+
+.right-buttons {
+  position: absolute; /* Position the 'Add Blog' button relative to the .button-toolbar */
+  right: 0;  /* Align the button to the right */
+}
+
+
+
+/* Style for the image preview and the delete button */
+.image-preview {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.delete-image-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.delete-image-button:hover {
+  color: darkred;
+}
